@@ -328,7 +328,7 @@ h2.title span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-	z-index: 999;
+	z-index: 9999;
 }
 /* loader */
 @keyframes ldio-rpinwye8j0b {
