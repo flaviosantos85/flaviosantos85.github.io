@@ -61,7 +61,10 @@ jQuery(function($) {
 
 })
 
+
 document.addEventListener('DOMContentLoaded',function(event){
+
+    jQuery('.overlay-loader').remove();
 	// array with texts to type in typewriter
 	var dataText = [ "PHP DEVELOPER"];
 	
