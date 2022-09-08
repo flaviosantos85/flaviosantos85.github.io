@@ -1180,9 +1180,11 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 	#arrow-up {
 		right:20px
 	}
-	.fadeInLeft {
-		order:-1
+	
+	.fadeInRight {
+		order:1 !important
 	}
+	
 	.navbar-default .navbar-nav > li > a {
     	padding: 15px 20px;
 		text-align: center;
