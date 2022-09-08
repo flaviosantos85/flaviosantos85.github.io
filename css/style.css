@@ -1,11 +1,13 @@
 /*
 	Author: webthemez.com 
 */ 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic,500italic);
- 
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic,500italic);*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 /* Global styles
 ================================================== */
-
+* {
+	font-family: 'Roboto Slab', serif;
+}
 html{
 	overflow-x: hidden !important;
 	width: 100%;
@@ -22,6 +24,7 @@ body{
 	color: #333333;
 	font-size: 14px;
 	background: #fff;
+	
 }
 
 
@@ -64,17 +67,13 @@ ul,li{
 ================================================== */
 
 body, p{
-	font-family: 'Roboto', sans-serif;
+	
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 30px;
 	background-color: #0C0A09;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', sans-serif;
-
-}
 
 h1{
     font-size: 36px;
@@ -308,12 +307,12 @@ h2.title span{
 }
 .service {
 	padding:20px;
-	border:1px solid transparent;
 	border-radius: 5px;
 	text-align: center;
 	font-size:100px;
 	color:white;
 	transition: all 0.5s;
+	
 	
 }
 .overlay-loader {
@@ -375,6 +374,7 @@ h2.title span{
 }
 .service-description {
 	line-height: 20px;
+	font-size:14px
 }
 .navbar-default .navbar-nav > li > a{
 	font-weight: 400;
@@ -498,7 +498,7 @@ h2.title span{
 /*section-skills
 ===============================================*/
 .skill-box{
-	margin-bottom: 38px;
+	margin-bottom: 45px;
 }
 .skill-box label{
 	text-transform: uppercase;
