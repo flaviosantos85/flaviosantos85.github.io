@@ -439,6 +439,7 @@ h2.title span{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom center;
+	background-attachment: fixed;
 }
 #section-profile{
 	background: #232323;
