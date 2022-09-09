@@ -666,13 +666,14 @@ h2.title span{
 }
 .portfolio-box img {
 	filter:grayscale(100%);
-	border:1px solid transparent;
+	border:2px solid transparent;
 	padding:6px;
 	transition: all 0.9s;
 }
 .portfolio-box img:hover {
 	filter:grayscale(0%);
-	border:1px solid #b4c80a
+	border:2px solid #b4c80a;
+	opacity: 0.9;
 }
 .portfolio-box p {
 	text-align: center;
