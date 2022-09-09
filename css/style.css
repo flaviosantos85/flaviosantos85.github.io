@@ -434,6 +434,12 @@ h2.title span{
 #section-skill .btn-default.featured{
 	padding: 15px 36px!important;
 }
+#section-skill {
+	background-image: url('../images/skills_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+}
 #section-profile{
 	background: #232323;
 }
