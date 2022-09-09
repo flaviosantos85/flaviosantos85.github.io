@@ -205,6 +205,7 @@ h2.heading-title{
 #section-banner{
 	background: url("../images/background.png") ;
 	background-size: cover;
+	background-attachment: fixed;
 }
 .banner-content{
 	padding: 250px 0px 300px 0px;
@@ -1171,8 +1172,8 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 		font-size:35px
 		
 	}
-	.btn-whatsapp {
-		left:10px
+	.btn-whatsapp-pulse {
+		left:10px !important
 	}
 	.btn-whatsapp img {
 		width:70px;
@@ -1223,4 +1224,72 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 	}
 
 
+}
+
+.btn-whatsapp-pulse {
+	background: #25d366;
+	color: white;
+	position: fixed;
+	bottom: 60px !important;
+	left: 90px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 0;
+	padding: 35px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	z-index: 99999;
+	float:left
+	
+}
+.btn-whatsapp-pulse:hover {
+	color: white;
+}
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+	}
+}
+
+.btn-whatsapp-pulse-border {
+	bottom: 120px;
+	right: 20px;
+	animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	padding: 25px;
+	border: 5px solid #25d366;
+	opacity: 0.75;
+	animation-name: pulse-border;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+	0% {
+		padding: 25px;
+		opacity: 0.75;
+	}
+	75% {
+		padding: 50px;
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
