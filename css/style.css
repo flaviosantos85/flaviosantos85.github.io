@@ -1245,7 +1245,7 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 	animation-duration: 1.5s;
 	animation-timing-function: ease-out;
 	animation-iteration-count: infinite;
-	z-index: 99999;
+	z-index: 9999;
 	float:left
 	
 }
