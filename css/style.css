@@ -275,7 +275,7 @@ h2.title span{
   border-color: #FEFEFE;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #0C0A09;
+  background-color: #b4c80a;
 }
 .navbar-toggle {
   position: relative;
@@ -294,7 +294,7 @@ h2.title span{
 }
 .navbar{}
 .navbar-default{
-	background: #b4c80a;
+	background: #282827;
 	border: 0px;
 	border-radius: 0px;
 }
@@ -394,7 +394,7 @@ h2.title span{
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #fff;
+    color: #b4c80a;
     background-color: transparent;
 }
 
