@@ -61,6 +61,14 @@ jQuery(function($) {
 
 })
 
+random = Math.floor(Math.random() * 2)
+var backgrounds = ['bg.png', 'bg1.png'];
+var bg = './images/' + backgrounds[ random ];
+$( '#section-banner' ).fadeIn('slow', function() {
+	$( this ).css('background-image', 'url("'+ bg +'")')
+});
+
+
 
 document.addEventListener('DOMContentLoaded',function(event){
 
