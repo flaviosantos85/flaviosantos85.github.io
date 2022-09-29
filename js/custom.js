@@ -61,8 +61,8 @@ jQuery(function($) {
 
 })
 
-random = Math.floor(Math.random() * 2)
-var backgrounds = ['bg.png', 'bg1.png'];
+random = Math.floor(Math.random() * 3)
+var backgrounds = ['bg.png', 'bg1.png', 'bg3.png', 'bg4.png'];
 var bg = './images/' + backgrounds[ random ];
 $( '#section-banner' ).fadeIn('slow', function() {
 	$( this ).css('background-image', 'url("'+ bg +'")')
