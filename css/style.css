@@ -190,13 +190,13 @@ p{
 	background-color: transparent;
 }
 h2.heading-title{
-	margin-bottom: 50px;
+	
 	font-weight: 700;
 }
 .section-heading{
-	border:1px solid red
-	width: 80%;
-	margin: 0 auto;
+	text-align:left;
+	padding-bottom:20px;
+	
 }
 
 /*=============================================
@@ -204,7 +204,7 @@ h2.heading-title{
 ================================================*/
 
 #section-banner{
-	background: url("../images/bg4.png") ;
+	background: url("../images/bg.png") ;
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-attachment: fixed;
@@ -270,11 +270,11 @@ h2.title span{
 /*==================================================
 	navbar-menu
 =====================================================*/
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: #FEFEFE;
-}
+
 .navbar-default .navbar-toggle {
+  
   border-color: #FEFEFE;
+  height:40px;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #b4c80a;
@@ -296,8 +296,8 @@ h2.title span{
 }
 .navbar{}
 .navbar-default{
-	background: #282827;
-	border: 0px;
+	border:0;
+	background: rgba(40,40,39, 0.9);
 	border-radius: 0px;
 }
 .navbar-nav {}
@@ -326,11 +326,27 @@ h2.title span{
 	width:95%;
 	border-radius:6px;
 	border:1px solid transparent;
-	transition:all 0.5s
+	transition:all 0.5s;
+	position:relative;
+	top:0;
+}
+#modal-project {
+	top:20vh;
+}
+#modal-project .modal-content{
+	border-radius:0;
+	background:#464645;
+}
+#modal-project .modal-header {
+	border-bottom: 1px solid #383434;
+}
+#modal-project .modal-header h5 span {
+	color:#b4c80a ;
+	font-size:20px
 }
 .service-item:hover {
 	opacity:0.8;
-	
+	top:-7px;
 	
 }
 .service-item img {
@@ -389,7 +405,6 @@ h2.title span{
 	color:orange;
 }
 .service-title{
-	font-weight: bold;
 	padding:20px;
 	color:#b4c80a;
 	font-size:18px;
@@ -558,6 +573,10 @@ h2.title span{
 	color:black;
 }
 
+.skill-desc{
+	text-align:justify;
+}
+
 .skill-desc span {
 	font-weight: bold;
 	color:#b4c80a
@@ -675,9 +694,49 @@ h2.title span{
 /*====================================================
 	section-portfolio
 ====================================================*/
-#section-portfolio
-.section-heading{
-	margin-bottom: 100px;
+.portfolio {
+	padding:5px;
+	overflow:hidden;
+	
+}
+
+.portfolio p {
+	position:absolute;
+	bottom:20%;
+	text-align:center;
+	width:100%;
+	color:transparent;
+	transition:all 0.5s;
+	line-height:23px;
+}
+
+.portfolio:hover p {
+	color:#b4c80a;
+	bottom:30%;
+} 
+.portfolio:hover .portfolio-inner p span {
+	border:1px solid #b4c80a;
+}
+.portfolio-inner:hover img {
+	transform:scale(1.3);
+	transition:all 0.5s;
+	filter:grayscale(0%);
+	opacity:0.1
+}
+.portfolio-inner img {
+	filter:grayscale(100%)
+}
+.portfolio-inner p span {
+	border-radius:10px;
+	font-size:15px;
+	border:1px solid transparent;
+	padding:10px;
+}
+.portfolio-inner {
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+	
 }
 .portfolio-box{
 	
@@ -1184,8 +1243,11 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 
 /* Custom, iPhone Retina */ 
 @media (min-width : 320px) and (max-width: 478px)  {
+	.service-item {
+		margin-bottom:15px
+	}
 	.navbar-nav {
-		background:#000000 ;
+		background:rgba(0,0,0,0.9);
 		margin-top: 25px;
 	}
 	.navbar-default .navbar-collapse{
@@ -1246,6 +1308,7 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 	}
 	.skill-desc{
 		margin-bottom: 40px;
+		text-align:justify;
 		
 	}
 	

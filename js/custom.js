@@ -61,12 +61,12 @@ jQuery(function($) {
 
 })
 
-random = Math.floor(Math.random() * 4)
+/*random = Math.floor(Math.random() * 4)
 var backgrounds = ['bg.png', 'bg1.png', 'bg3.png', 'bg4.png'];
 var bg = './images/' + backgrounds[ random ];
 $( '#section-banner' ).fadeIn('slow', function() {
 	$( this ).css('background-image', 'url("'+ bg +'")')
-});
+});*/
 
 
 
