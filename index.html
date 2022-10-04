@@ -49,7 +49,7 @@
     			<div class="banner-content wow fadeInRight">
 					<!--?xml version="1.0" standalone="no"?-->
 
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="160" viewBox="0 0 250.000000 250.000000" preserveAspectRatio="xMidYMid meet">
+<svg version="1.0" id="logo" xmlns="http://www.w3.org/2000/svg" width="160" viewBox="0 0 250.000000 250.000000" preserveAspectRatio="xMidYMid meet">
 
 	<g transform="translate(0.000000,250.000000) scale(0.100000,-0.100000)" stroke-width="10" stroke="#b4c80a">
 	<path d="M1140 2488 c-192 -14 -398 -87 -572 -201 -110 -72 -272 -230 -339
@@ -525,7 +525,7 @@
 				<span></span>
 			</h5>
 		  </div>
-		  <div class="modal-body project-content" style="padding-left:80px">
+		  <div class="modal-body project-content">
 		  </div>
 		</div>
 	  </div>
@@ -582,12 +582,13 @@
 					dash : "yes",
 				framework: "no",
 					 cms : "no",
-					 url : "http://vulkan.infinityfreeapp.com"
+					 url : "http://vulkan.infinityfreeapp.com",
+					 extra: "user: flaviosanttos8585@gmail.com pass: 123123"
 				},
 				select : {
 					title : "Power Machine Select",
 					techs : "HTML, CSS, Javascript, jQuery, PHP, PHPMailer",
-					dash : "yes",
+					dash : "no",
 				framework: "no",
 					 cms : "no",
 					 url : "https://powermaquinas.com.br/select"
@@ -666,7 +667,9 @@
 			</tr>
 			<tr>
 				<td>Go to project: </td>
-				<td><a href=${current_project.url} target="_blank">${current_project.url}</a></td>
+				<td><a href=${current_project.url} target="_blank">${current_project.url}</a>
+					${ ( current_project.extra ) ? '( ' + current_project.extra + ' )' : '' }
+				</td>
 			</tr>
 		 </table>`
 		 

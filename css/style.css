@@ -332,7 +332,7 @@ h2.title span{
 }
 .table-project-content {
 	font-size:14px;
-	width:70%;
+	width:85%;
 	color:#a09d9d;
 	line-height:28px
 }
@@ -346,6 +346,7 @@ h2.title span{
 .project-content {
 	padding-top:20px;
 	padding-bottom:50px;
+	padding-left:80px
 }
 
 #modal-project .modal-title span {
@@ -1272,6 +1273,9 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 
 /* Custom, iPhone Retina */ 
 @media (min-width : 320px) and (max-width: 478px)  {
+	#logo {
+		width:120px
+	}
 	.service-item {
 		margin-bottom:15px
 	}
@@ -1296,6 +1300,14 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 		margin:0 auto;
 		
 		
+	}
+	.table-project-content {
+		width:100%;
+		margin:0;
+	}
+	.project-content {
+		width:100%;
+		padding:15px;
 	}
 	.btn-whatsapp-pulse {
 		left:10px !important
