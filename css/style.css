@@ -330,6 +330,30 @@ h2.title span{
 	position:relative;
 	top:0;
 }
+.table-project-content {
+	font-size:14px;
+	width:70%;
+	color:#a09d9d;
+	line-height:28px
+}
+.table-project-content a:hover {
+	color: #ffffff;
+}
+
+.table-project-content a:visited {
+	color: #ffffff;
+}
+.project-content {
+	padding-top:20px;
+	padding-bottom:50px;
+}
+
+#modal-project .modal-title span {
+	color: #b4c80a;
+	font-size:20px !important;
+	position:relative;
+	top:5px
+}
 #modal-project {
 	top:20vh;
 }
@@ -706,7 +730,7 @@ h2.title span{
 	text-align:center;
 	width:100%;
 	color:transparent;
-	transition:all 0.5s;
+	transition:all 0.2s;
 	line-height:23px;
 }
 
@@ -716,6 +740,11 @@ h2.title span{
 } 
 .portfolio:hover .portfolio-inner p span {
 	border:1px solid #b4c80a;
+	display:block;
+	font-size:13px;
+	width:80px;
+	padding:5px;
+	margin:0 auto;
 }
 .portfolio-inner:hover img {
 	transform:scale(1.3);
