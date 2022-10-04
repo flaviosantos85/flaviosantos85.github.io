@@ -1273,6 +1273,14 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 
 /* Custom, iPhone Retina */ 
 @media (min-width : 320px) and (max-width: 478px)  {
+	body {
+		height: 100%;
+		overflow:hidden;
+ 	}
+	.main-container {
+		overflow-y:scroll;
+		height:100%
+	}
 	#logo {
 		width:120px
 	}
