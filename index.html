@@ -493,7 +493,7 @@
 						<li><a target="_blank" href="https://github.com/flaviosantos85"><i class="fa fa-github"></i></a></li>
 						<li><a target="_blank" href="https://linkedin.com/in/flavio-santos-31853bb4/"><i class="fa fa-linkedin"></i></a></li>
 					</ul>
-					<h4>- Copyright © 2025, Flavio Santos Developer -</h4>
+					<h4>- Copyright © <span id="credYr"></span>, Flavio Santos Developer -</h4>
 
 				</div>
 			</div>
@@ -553,6 +553,9 @@
 	<script type="text/javascript">
 		 $(".main-nav").sticky();
 
+		 var yr = new Date().getFullYear()
+
+		$( '#credYr' ).html( yr )
 		 
 		 $( 'body' ).on('click', '.portfolio a', function( e ){
 			
@@ -683,7 +686,7 @@
 				<td>${current_project.framework}</td>
 			</tr>
 			<tr>
-				<td>Go to project: </td>
+				<td>Go to the project: </td>
 				<td><a href=${current_project.url} target="_blank">${current_project.url}</a>
 					${ ( current_project.extra ) ? '( ' + current_project.extra + ' )' : '' }
 				</td>
